@@ -1,0 +1,2 @@
+# Projects-
+This repository is a series of projects that helped me develop my coding abilities from the most basic skills (like printing, if statements, while loops etc) to more developed concepts.
