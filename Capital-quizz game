@@ -1,0 +1,194 @@
+# This is my first Python project, which helped me practice basic concepts 
+# such as if statements and functions, including string manipulation like converting to lowercase.
+# I developed this project while studying at an international university. 
+# With so many people from diverse cultures, I wanted to apply my knowledge 
+# about different countries and reinforce what I had learned.
+
+print("Welcome to my computer quizz! Hope you will have fun!:) ")
+
+playing = input("Do you want to play the game? ")
+
+if playing.lower() != "yes":
+    print("Okay, maybe next time!")
+    exit()
+
+print("Okay! Let's have some fun!")
+score = 0
+
+answer = input("What is the capital of France? ")
+if answer.strip().title() == "Paris":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Romania? ")
+if answer.strip().title() == "Bucharest":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Spain? ")
+if answer.strip().title() == "Madrid":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of USA? ")
+if answer.strip().title() == "Washington":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Germany? ")
+if answer.strip().title() == "Berlin":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Austria? ")
+if answer.strip().title() == "Vienna":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of UAE? ")
+if answer.strip().title() == "Abu Dhabi":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Ethiopia? ")
+if answer.strip().title() == "Addis Ababa":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Jordan? ")
+if answer.strip().title() == "Amman":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Turkey? ")
+if answer.strip().title() == "Ankara":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Greece? ")
+if answer.strip().title() == "Athens":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of China? ")
+if answer.strip().title() == "Beijing":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Belgium? ")
+if answer.strip().title() == "Brussels":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Venezuela? ")
+if answer.strip().title() == "Caracas":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Vietnam? ")
+if answer.strip().title() == "Hanoi":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of UK? ")
+if answer.strip().title() == "London":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of India? ")
+if answer.strip().title() == "New Delhi":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Norway? ")
+if answer.strip().title() == "Oslo":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Sweden? ")
+if answer.strip().title() == "Stockholm":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Ecuador? ")
+if answer.strip().title() == "Quito":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of El Salvador? ")
+if answer.strip().title() == "San Salvador":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Bulgaria? ")
+if answer.strip().title() == "Sofia":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Estonia? ")
+if answer.strip().title() == "Tallinn":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Armenia? ")
+if answer.strip().title() == "Yerevan":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+answer = input("What is the capital of Croatia? ")
+if answer.strip().title() == "Zagreb":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!:(")
+
+print("You got " + str(score) + " questions correct")
+print("You got " + str((score/30) * 100) + "%.")
