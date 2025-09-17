@@ -1,0 +1,39 @@
+#This is a simple text-based adventure game
+#The player makes choices and the story changes depending on their answers.
+
+#We ask the player for their name
+name = input("Please type your name: ")
+print("Welcome", name, "to this adventure!")
+
+#left or right on the dirt road
+answer = input("You are on a dirt road. It has come to an end and you can either go left or right. Type 'left' or 'right': ")
+
+#if the player chooses the left path
+if answer.lower() == "left":
+    #next choice at the river: walk or swim
+    answer = input("You come to a river. Do you want to walk around it or swim across? Type 'walk' to walk around and 'swim' to swim across: ")
+
+    if answer.lower() == "swim":
+        #outcome if the player chooses to swim
+        print("You tried to swim across but the current was too strong. You lose the game.")
+    elif answer.lower() == "walk":
+        #outcome if the player chooses to walk
+        print("You walked for many miles, found a bridge, and safely crossed. You win!")
+    else:
+        #if the player types something invalid
+        print("Not a valid option. You lose the game.")
+
+#if the player chooses the right path
+elif answer.lower() == "right":
+    answer = input("You come to a bridge. It looks wobbly. Do you want to cross it or go back? Type 'cross' or 'back': ")
+
+    if answer.lower() == "cross":
+        print("You carefully cross the bridge and find a treasure chest. You win!")
+    elif answer.lower() == "back":
+        print("You go back to the start and get lost in the forest. You lose the game.")
+    else:
+        print("Not a valid option. You lose the game.")
+
+#if the player types something invalid at the first choice
+else:
+    print("Not a valid option. You lose the game.")
