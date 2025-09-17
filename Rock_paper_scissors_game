@@ -1,0 +1,48 @@
+#This game is a simple rock/paper/scissors game against the machine
+# the user chooses an element or to quit the game and then we generate the answer of the machine
+# using random and figure out the cases when the user wins
+
+import random 
+
+user_wins = 0
+computer_wins = 0
+
+options = ["rock", "paper", "scissors"]
+options[0]
+
+
+while True:
+    user_input = input("Please type rock/paper/scissors or quit to quit the game: ").lower()
+    if user_input == "quit":
+        break
+
+    if user_input not in ["rock", "paper", "scissors"]:
+        continue
+
+    random_number = random.randint(0,2)
+    # rock:0, paper:1, scissors:2
+
+    computer_pick = options[random_number]
+    print("Computer picked", computer_pick + ".")
+
+    if user_input == "rock" and computer_pick == "scissors":
+        print("You won!! Congrats!!")
+        user_wins +=1
+        continue
+    elif user_input == "paper" and computer_pick == "rock":
+        print("You won!! Congrats!!")
+        user_wins +=1
+        continue
+    elif user_input == "scissors" and computer_pick == "paper":
+        print("You won!! Congrats!!")
+        user_wins +=1
+        continue
+
+    else:
+        print("You lost:( ")
+        computer_wins =+1
+
+print("You won", user_wins, "times.")
+print("The computer won", computer_wins, "times.")
+
+print("Thank you for playing!;) Goodbye!")
