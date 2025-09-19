@@ -1,0 +1,36 @@
+# This script reads a story from 'story.txt' and looks for placeholders wrapped in < > (e.g., <noun>).
+# It then asks the user to provide replacement words for each placeholder only once.
+# Finally, it replaces all placeholders in the story with the user’s inputs and prints the completed story.
+
+#we read the story from file
+with open("story.txt", "r") as f:
+    story = f.read()
+
+words = set()         
+start_of_word = -1
+
+target_start = "<"
+target_end = ">"
+
+#we extract placeholders between < and >
+for i, char in enumerate(story):
+    if char == target_start:   # fixed colon
+        start_of_word = i
+
+    if char == target_end and start_of_word != -1:
+        word = story[start_of_word: i + 1]  # include >
+        words.add(word)
+        start_of_word = -1
+
+#we ask the user for replacements
+answers = {}   # dictionary for word -> user input
+
+for word in words:
+    user_input = input("Enter a word for " + word + ": ")
+    answers[word] = user_input
+
+# Replace placeholders in the story
+for word, replacement in answers.items():
+    story = story.replace(word, replacement)
+
+print(story)
