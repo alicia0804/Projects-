@@ -5,3 +5,4 @@ This repository is a series of projects that helped me develop my coding abiliti
 3) Rock/Paper/Scissors game -> a very simple game that enabled me to test my thinking on generating random numbers and making the user choose a variable
 4) Story game -> just letting the user make some choices and based on their answer then the story continues or stops
 5) Password Manager -> built a password manager in Python using Fernet encryption; stores and retrieves encrypted credentials from a local file.
+6) Dice game -> between multiple players that are able to roll the dice to get a number of points, their points are canceled if they land on 1
