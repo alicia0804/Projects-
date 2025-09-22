@@ -7,3 +7,4 @@ This repository is a series of projects that helped me develop my coding abiliti
 5) Password Manager -> built a password manager in Python using Fernet encryption; stores and retrieves encrypted credentials from a local file.
 6) Dice game -> between multiple players that are able to roll the dice to get a number of points, their points are canceled if they land on 1
 7) Storytxt Game -> replacing words in different stories and printing the complete story
+8) Mah Game -> this small game generates 10 arithmetic problems using addition, multiplication, substraction, the player is timed from start to finish and must answer the question correctly 
